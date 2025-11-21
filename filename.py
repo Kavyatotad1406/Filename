@@ -1,16 +1,19 @@
 import sys
-if len(sys.argv)<1:
-    file=char(sys.argv[1])
-    print("User provided filename:")
-else:
-    print("No input given-Default value is:")
-    file=cartoon.img 
 
-if(file==".img"):
-    print("It's an image")
-elif(file==".mp4"):
-   print("It's a video")
-elif(file==".doc"):
-   print("It's a document")
+# If user provides argument, use it; else use default filename
+if len(sys.argv) > 1:
+    file = sys.argv[1]
+    print("User provided filename:", file)
 else:
-    print("Invalid Choice!")               
+    print("No input given - Default value is used:")
+    file = "cartoon.img"
+
+# Check file extension
+if file.endswith(".img"):
+    print("It's an image")
+elif file.endswith(".mp4"):
+    print("It's a video")
+elif file.endswith(".doc"):
+    print("It's a document")
+else:
+    print("Invalid Choice!")
