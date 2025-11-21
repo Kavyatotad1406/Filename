@@ -6,11 +6,11 @@ else:
     print("No input given-Default value is:")
     file=cartoon.img 
 
-if(file=".img"):
+if(file==".img"):
     print("It's an image")
-elif(file=".mp4"):
+elif(file+=".mp4"):
    print("It's a video")
-elif(file=".doc"):
+elif(file==".doc"):
    print("It's a document")
 else:
     print("Invalid Choice!")               
