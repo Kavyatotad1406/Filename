@@ -1,20 +1,18 @@
 import sys
 
-# Jenkins does not pass arguments unless configured
-# So first check if we *actually* received one
 if len(sys.argv) > 1:
     file = sys.argv[1]
-    print("User provided filename:")
+    print("User provided filename:", file)
 else:
     print("No input given - Default value is:")
     file = "cartoon.img"
+    print("Filename:", file)
 
-# Checking extension
 if file.endswith(".img"):
-    print("It's an image")
+    print("It's an image ->", file)
 elif file.endswith(".mp4"):
-    print("It's a video")
+    print("It's a video ->", file)
 elif file.endswith(".doc"):
-    print("It's a document")
+    print("It's a document ->", file)
 else:
-    print("Invalid Choice!")
+    print("Invalid Choice! ->", file)
