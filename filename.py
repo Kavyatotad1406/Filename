@@ -8,7 +8,7 @@ else:
 
 if(file==".img"):
     print("It's an image")
-elif(file+=".mp4"):
+elif(file==".mp4"):
    print("It's a video")
 elif(file==".doc"):
    print("It's a document")
